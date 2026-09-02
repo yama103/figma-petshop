@@ -60,7 +60,9 @@
             <div class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item"><a href="#">Home</a></li>
-                <li class="header__nav-item"><a href="#">Shop</a></li>
+                <li class="header__nav-item header__nav-item--active">
+                  <a href="#">Shop</a>
+                </li>
                 <li class="header__nav-item"><a href="#">About Us</a></li>
                 <li class="header__nav-item"><a href="#">Contact Us</a></li>
               </ul>
@@ -84,302 +86,18 @@
       </section>
     </header>
     <main>
-      <section class="hero">
+      <section class="shop-hero">
         <div class="container">
-          <div class="hero__wrapper">
-            <div class="hero__content">
-              <span class="hero__content-subtitle">Pet shop</span>
-              <h1 class="hero__content-title">
-                A pet store with everything you need
+          <div class="shop-hero__wrapper">
+            <div class="shop-hero__content">
+              <span class="shop-hero__content-subtitle">Pet shop</span>
+              <h1 class="shop-hero__content-title">
+                The friendly and caring small pet store
               </h1>
-              <p class="hero__content-desc">
-                Sociis blandit et pellentesque aliquet at quisque tortor lacinia
-                nullam. Mattis aenean scelerisque dui libero
+              <p class="shop-hero__content-desc">
+                At et vehicula sodales est proin turpis pellentesque sinulla a
+                aliquam amet rhoncus quisque eget sit
               </p>
-              <button class="hero__content-button" type="button">
-                Shop Now
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="categories">
-        <div class="container">
-          <div class="categories__wrapper">
-            <div class="categories__header">
-              <h2 class="categories__title">Browse by category</h2>
-
-              <!-- 右側の矢印ボタン -->
-              <div class="categories__controls">
-                <button
-                  class="categories__arrow categories__arrow--prev"
-                  type="button"
-                >
-                  <!-- 左矢印アイコン -->
-                </button>
-                <button
-                  class="categories__arrow categories__arrow--next"
-                  type="button"
-                >
-                  <!-- 右矢印アイコン -->
-                </button>
-              </div>
-            </div>
-
-            <div class="categories__list">
-              <!-- カテゴリーカードが並ぶ -->
-              <a href="#" class="category-card">
-                <div class="category-card__image">
-                  <img src="" alt="Accessories" />
-                </div>
-                <div class="category-card__info">
-                  <h3 class="category-card__name">Accessories</h3>
-                  <span class="category-card__count">84 products</span>
-                </div>
-                <span class="category-card__arrow">
-                  <!-- 右向きの小さな矢印アイコン -->
-                </span>
-              </a>
-              <a href="#" class="category-card">
-                <div class="category-card__image">
-                  <img src="" alt="Food" />
-                </div>
-                <div class="category-card__info">
-                  <h3 class="category-card__name">Food</h3>
-                  <span class="category-card__count">64 products</span>
-                </div>
-                <span class="category-card__arrow">
-                  <!-- 右向きの小さな矢印アイコン -->
-                </span>
-              </a>
-              <a href="#" class="category-card">
-                <div class="category-card__image">
-                  <img src="" alt="Furniture" />
-                </div>
-                <div class="category-card__info">
-                  <h3 class="category-card__name">Furniture</h3>
-                  <span class="category-card__count">22 products</span>
-                </div>
-                <span class="category-card__arrow">
-                  <!-- 右向きの小さな矢印アイコン -->
-                </span>
-              </a>
-              <a href="#" class="category-card">
-                <div class="category-card__image">
-                  <img src="" alt="Bags" />
-                </div>
-                <div class="category-card__info">
-                  <h3 class="category-card__name">Bags</h3>
-                  <span class="category-card__count">16 products</span>
-                </div>
-                <span class="category-card__arrow">
-                  <!-- 右向きの小さな矢印アイコン -->
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="featured">
-        <div class="container">
-          <div class="featured__wrapper">
-            <h2 class="featured__title">Featured products</h2>
-
-            <div class="featured__list">
-              <!-- 商品カードが3つ並ぶ -->
-              <article class="product-card">
-                <div class="product-card__image">
-                  <img src="" alt="Premium Dog Food" />
-                </div>
-                <div class="product-card__info">
-                  <h3 class="product-card__name">Premium Dog Food</h3>
-                  <span class="product-card__price">$19.99</span>
-                  <button class="product-card__favorite" type="button">
-                    <!-- ハートアイコン（後でCSSか画像で） -->
-                  </button>
-                </div>
-              </article>
-              <article class="product-card">
-                <div class="product-card__image">
-                  <img src="" alt="Premium Cat Food" />
-                </div>
-                <div class="product-card__info">
-                  <h3 class="product-card__name">Premium Cat Food</h3>
-                  <span class="product-card__price">$19.99</span>
-                  <button class="product-card__favorite" type="button">
-                    <!-- ハートアイコン（後でCSSか画像で） -->
-                  </button>
-                </div>
-              </article>
-              <article class="product-card">
-                <div class="product-card__image">
-                  <img src="" alt="Premium Dog Food" />
-                </div>
-                <div class="product-card__info">
-                  <h3 class="product-card__name">Premium Dog Food</h3>
-                  <span class="product-card__price">$19.99</span>
-                  <button class="product-card__favorite" type="button">
-                    <!-- ハートアイコン（後でCSSか画像で） -->
-                  </button>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="promo">
-        <div class="container">
-          <div class="promo__wrapper">
-            <!-- 左側：イラスト -->
-            <div class="promo__image">
-              <!-- ここに猫のイラスト画像（または背景画像） -->
-            </div>
-
-            <!-- 右側：テキスト -->
-            <div class="promo__content">
-              <span class="promo__subtitle">Pet Shop</span>
-              <h2 class="promo__title">The smarter way to shop for your pet</h2>
-              <p class="promo__desc">
-                Lorem ipsum dolor sit amet consectetur. At et vehicula sodales
-                est proin turpis pellentesque sinulla a aliquam amet rhoncus
-                quisque eget sit
-              </p>
-              <a href="#" class="promo__button">Learn More</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="partners">
-        <div class="container">
-          <div class="partners__wrapper">
-            <ul class="partners__list">
-              <li class="partners__item">
-                <img class="partners__icon" src="" alt="" />
-                <span class="partners__name">Company Name</span>
-              </li>
-              <li class="partners__item">
-                <img class="partners__icon" src="" alt="" />
-                <span class="partners__name">Company Name</span>
-              </li>
-              <li class="partners__item">
-                <img class="partners__icon" src="" alt="" />
-              </li>
-              <li class="partners__item">
-                <img class="partners__icon" src="" alt="" />
-                <span class="partners__name">Company Name</span>
-              </li>
-              <li class="partners__item">
-                <img class="partners__icon" src="" alt="" />
-                <span class="partners__name">Company Name</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="bestsellers">
-        <div class="container">
-          <div class="bestsellers__wrapper">
-            <h2 class="bestsellers__title">Best selling products</h2>
-
-            <div class="bestsellers__list">
-              <!-- product-card を8つ並べる -->
-              <article class="product-card">
-                <div class="product-card__image">
-                  <img src="" alt="Cat Bowl" />
-                </div>
-                <div class="product-card__info">
-                  <h3 class="product-card__name">Cat Bowl</h3>
-                  <span class="product-card__price">$20.99</span>
-                  <button class="product-card__favorite" type="button">
-                    <!-- ハートアイコン（後でCSSか画像で） -->
-                  </button>
-                </div>
-              </article>
-              <article class="product-card">
-                <div class="product-card__image">
-                  <img src="" alt="Cat Bowl" />
-                </div>
-                <div class="product-card__info">
-                  <h3 class="product-card__name">Cat Bowl</h3>
-                  <span class="product-card__price">$49.99</span>
-                  <button class="product-card__favorite" type="button">
-                    <!-- ハートアイコン（後でCSSか画像で） -->
-                  </button>
-                </div>
-              </article>
-              <article class="product-card">
-                <div class="product-card__image">
-                  <img src="" alt="Dog Leash" />
-                </div>
-                <div class="product-card__info">
-                  <h3 class="product-card__name">Dog Leash</h3>
-                  <span class="product-card__price">$9.99</span>
-                  <button class="product-card__favorite" type="button">
-                    <!-- ハートアイコン（後でCSSか画像で） -->
-                  </button>
-                </div>
-              </article>
-              <article class="product-card">
-                <div class="product-card__image">
-                  <img src="" alt="Premium Cat Food" />
-                </div>
-                <div class="product-card__info">
-                  <h3 class="product-card__name">Premium Cat Food</h3>
-                  <span class="product-card__price">$19.99</span>
-                  <button class="product-card__favorite" type="button">
-                    <!-- ハートアイコン（後でCSSか画像で） -->
-                  </button>
-                </div>
-              </article>
-              <article class="product-card">
-                <div class="product-card__image">
-                  <img src="" alt="Dog Bowl" />
-                </div>
-                <div class="product-card__info">
-                  <h3 class="product-card__name">Dog Bowl</h3>
-                  <span class="product-card__price">$19.99</span>
-                  <button class="product-card__favorite" type="button">
-                    <!-- ハートアイコン（後でCSSか画像で） -->
-                  </button>
-                </div>
-              </article>
-
-              <article class="product-card">
-                <div class="product-card__image">
-                  <img src="" alt="Premium Dog Food" />
-                </div>
-                <div class="product-card__info">
-                  <h3 class="product-card__name">Premium Dog Food</h3>
-                  <span class="product-card__price">$29.99</span>
-                  <button class="product-card__favorite" type="button">
-                    <!-- ハートアイコン（後でCSSか画像で） -->
-                  </button>
-                </div>
-              </article>
-              <article class="product-card">
-                <div class="product-card__image">
-                  <img src="" alt="Dog Bed" />
-                </div>
-                <div class="product-card__info">
-                  <h3 class="product-card__name">Dog Bed</h3>
-                  <span class="product-card__price">$49.99</span>
-                  <button class="product-card__favorite" type="button">
-                    <!-- ハートアイコン（後でCSSか画像で） -->
-                  </button>
-                </div>
-              </article>
-              <article class="product-card">
-                <div class="product-card__image">
-                  <img src="" alt="Premium Dog Food" />
-                </div>
-                <div class="product-card__info">
-                  <h3 class="product-card__name">Premium Dog Food</h3>
-                  <span class="product-card__price">$19.99</span>
-                  <button class="product-card__favorite" type="button">
-                    <!-- ハートアイコン（後でCSSか画像で） -->
-                  </button>
-                </div>
-              </article>
             </div>
           </div>
         </div>
@@ -454,61 +172,385 @@
           </div>
         </div>
       </section>
-      <section class="news">
+      <section class="shop">
         <div class="container">
-          <div class="news__wrapper">
-            <h2 class="news__title">News & Blog</h2>
+          <div class="shop__wrapper">
+            <!-- 左側：フィルター -->
+            <aside class="shop__sidebar">
+              <form class="shop__filters" action="#" method="get">
+                <!-- Filter by categories -->
+                <div class="filter">
+                  <h3 class="filter__title">Filter by categories</h3>
+                  <ul class="filter__list">
+                    <li class="filter__item">
+                      <label>
+                        <input type="checkbox" />
+                        <span>Furniture</span>
+                        <span class="filter__count">21</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label>
+                        <input type="checkbox" />
+                        <span>Bowls</span>
+                        <span class="filter__count">28</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label>
+                        <input type="checkbox" />
+                        <span>Clothing</span>
+                        <span class="filter__count">12</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label>
+                        <input type="checkbox" />
+                        <span>Food</span>
+                        <span class="filter__count">80</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label>
+                        <input type="checkbox" />
+                        <span>Toys</span>
+                        <span class="filter__count">90</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label>
+                        <input type="checkbox" />
+                        <span>Sale</span>
+                        <span class="filter__count">24</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
 
-            <div class="news__list">
-              <article class="news-card">
-                <div class="news-card__image">
-                  <img src="" alt="" />
-                  <span class="news-card__label">News</span>
+                <!-- Filter by Price -->
+                <div class="filter">
+                  <h3 class="filter__title">Filter by Price</h3>
+                  <div class="filter__price">
+                    <input type="range" min="9" max="399" />
+                    <div class="filter__price-info">
+                      <span>Price: $9 - $399</span>
+                      <button type="submit" class="filter__price-button">
+                        Apply
+                      </button>
+                    </div>
+                  </div>
                 </div>
-                <div class="news-card__content">
-                  <time class="news-card__date" datetime="2024-05-24"
-                    >24 May,2024</time
+
+                <!-- Filter by brands -->
+                <div class="filter">
+                  <h3 class="filter__title">Filter by brands</h3>
+                  <ul class="filter__list">
+                    <li class="filter__item">
+                      <label>
+                        <input type="checkbox" />
+                        <span>Natural food</span>
+                        <span class="filter__count">28</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label>
+                        <input type="checkbox" />
+                        <span>Pet care</span>
+                        <span class="filter__count">18</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label>
+                        <input type="checkbox" />
+                        <span>Dogs friend</span>
+                        <span class="filter__count">16</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label>
+                        <input type="checkbox" />
+                        <span>Pet food</span>
+                        <span class="filter__count">40</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label>
+                        <input type="checkbox" />
+                        <span>Favorite pet</span>
+                        <span class="filter__count">28</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label>
+                        <input type="checkbox" />
+                        <span>Green line</span>
+                        <span class="filter__count">18</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Filter by tags -->
+                <div class="filter">
+                  <h3 class="filter__title">Filter by tags</h3>
+                  <div class="filter__tags">
+                    <button type="button" class="filter__tag">Dog food</button>
+                    <button type="button" class="filter__tag">Cat food</button>
+                    <button type="button" class="filter__tag">Natural</button>
+                    <button type="button" class="filter__tag">Parrot</button>
+                    <button type="button" class="filter__tag">Small dog</button>
+                    <button type="button" class="filter__tag">Cat</button>
+                  </div>
+                </div>
+              </form>
+              <div class="popular-products">
+                <h3 class="popular-products__title">Popular products</h3>
+                <ul class="popular-products__list">
+                  <li class="popular-products__item">
+                    <div class="popular-products__img">
+                      <img src="" alt="" />
+                    </div>
+                    <div class="popular-products__contents">
+                      <p class="popular-products__name">Premium Dog Food</p>
+                      <span class="popular-products__value">$99</span>
+                    </div>
+                  </li>
+                  <li class="popular-products__item">
+                    <div class="popular-products__img">
+                      <img src="" alt="" />
+                    </div>
+                    <div class="popular-products__contents">
+                      <p class="popular-products__name">Premium Cat Food</p>
+                      <span class="popular-products__value">$99</span>
+                    </div>
+                  </li>
+                  <li class="popular-products__item">
+                    <div class="popular-products__img">
+                      <img src="" alt="" />
+                    </div>
+                    <div class="popular-products__contents">
+                      <p class="popular-products__name">Cat Bed</p>
+                      <span class="popular-products__value">$99</span>
+                    </div>
+                  </li>
+                  <li class="popular-products__item">
+                    <div class="popular-products__img">
+                      <img src="" alt="" />
+                    </div>
+                    <div class="popular-products__contents">
+                      <p class="popular-products__name">Dog Leash</p>
+                      <span class="popular-products__value">$99</span>
+                    </div>
+                  </li>
+                  <li class="popular-products__item">
+                    <div class="popular-products__img">
+                      <img src="" alt="" />
+                    </div>
+                    <div class="popular-products__contents">
+                      <p class="popular-products__name">Cat Bowl</p>
+                      <span class="popular-products__value">$99</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+
+            <!-- 右側：商品一覧 -->
+            <div class="shop__content">
+              <!-- 上部バー：件数表示 + ソート -->
+              <div class="shop__toolbar">
+                <p class="shop__result">Showing 12–12 of 14 results</p>
+                <div class="shop__sort">
+                  <select>
+                    <option>Sort by latest</option>
+                    <option>Sort by oldest</option>
+                    <option>Sort by HighPrice</option>
+                    <option>Sort by LowPrice</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- 商品グリッド -->
+              <div class="shop__list">
+                <article class="product-card">
+                  <div class="product-card__image">
+                    <img src="" alt="Pet Carrier" />
+                  </div>
+                  <div class="product-card__info">
+                    <h3 class="product-card__name">Pet Carrier</h3>
+                    <span class="product-card__price">$29.99</span>
+                    <button class="product-card__favorite" type="button">
+                      <!-- ハートアイコン（後でCSSか画像で） -->
+                    </button>
+                  </div>
+                </article>
+
+                <article class="product-card">
+                  <div class="product-card__image">
+                    <img src="" alt="Cat Bowl" />
+                  </div>
+                  <div class="product-card__info">
+                    <h3 class="product-card__name">Cat Bowl</h3>
+                    <span class="product-card__price">$20.99</span>
+                    <button class="product-card__favorite" type="button">
+                      <!-- ハートアイコン（後でCSSか画像で） -->
+                    </button>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-card__image">
+                    <img src="" alt="Cat Bowl" />
+                  </div>
+                  <div class="product-card__info">
+                    <h3 class="product-card__name">Cat Bowl</h3>
+                    <span class="product-card__price">$19.99</span>
+                    <button class="product-card__favorite" type="button">
+                      <!-- ハートアイコン（後でCSSか画像で） -->
+                    </button>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-card__image">
+                    <img src="" alt="Premium Cat Food" />
+                  </div>
+                  <div class="product-card__info">
+                    <h3 class="product-card__name">Premium Cat Food</h3>
+                    <span class="product-card__price">$20.99</span>
+                    <button class="product-card__favorite" type="button">
+                      <!-- ハートアイコン（後でCSSか画像で） -->
+                    </button>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-card__image">
+                    <img src="" alt="Dog Bowl" />
+                  </div>
+                  <div class="product-card__info">
+                    <h3 class="product-card__name">Dog Bowl</h3>
+                    <span class="product-card__price">$4.99</span>
+                    <button class="product-card__favorite" type="button">
+                      <!-- ハートアイコン（後でCSSか画像で） -->
+                    </button>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-card__image">
+                    <img src="" alt="Cat Bowl" />
+                  </div>
+                  <div class="product-card__info">
+                    <h3 class="product-card__name">Cat Bed</h3>
+                    <span class="product-card__price">$49.99</span>
+                    <button class="product-card__favorite" type="button">
+                      <!-- ハートアイコン（後でCSSか画像で） -->
+                    </button>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-card__image">
+                    <img src="" alt="Dog Leash" />
+                  </div>
+                  <div class="product-card__info">
+                    <h3 class="product-card__name">Dog Leash</h3>
+                    <span class="product-card__price">$9.99</span>
+                    <button class="product-card__favorite" type="button">
+                      <!-- ハートアイコン（後でCSSか画像で） -->
+                    </button>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-card__image">
+                    <img src="" alt="Dog Bed" />
+                  </div>
+                  <div class="product-card__info">
+                    <h3 class="product-card__name">Dog Bed</h3>
+                    <span class="product-card__price">$49.99</span>
+                    <button class="product-card__favorite" type="button">
+                      <!-- ハートアイコン（後でCSSか画像で） -->
+                    </button>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-card__image">
+                    <img src="" alt="Dog Bowl" />
+                  </div>
+                  <div class="product-card__info">
+                    <h3 class="product-card__name">Dog Bowl</h3>
+                    <span class="product-card__price">$19.99</span>
+                    <button class="product-card__favorite" type="button">
+                      <!-- ハートアイコン（後でCSSか画像で） -->
+                    </button>
+                  </div>
+                </article>
+
+                <article class="product-card">
+                  <div class="product-card__image">
+                    <img src="" alt="Premium Dog Food" />
+                  </div>
+                  <div class="product-card__info">
+                    <h3 class="product-card__name">Premium Dog Food</h3>
+                    <span class="product-card__price">$29.99</span>
+                    <button class="product-card__favorite" type="button">
+                      <!-- ハートアイコン（後でCSSか画像で） -->
+                    </button>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-card__image">
+                    <img src="" alt="Dog Bed" />
+                  </div>
+                  <div class="product-card__info">
+                    <h3 class="product-card__name">Dog Bowl</h3>
+                    <span class="product-card__price">$19.99</span>
+                    <button class="product-card__favorite" type="button">
+                      <!-- ハートアイコン（後でCSSか画像で） -->
+                    </button>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <div class="product-card__image">
+                    <img src="" alt="Premium Dog Food" />
+                  </div>
+                  <div class="product-card__info">
+                    <h3 class="product-card__name">Premium Dog Food</h3>
+                    <span class="product-card__price">$24.99</span>
+                    <button class="product-card__favorite" type="button">
+                      <!-- ハートアイコン（後でCSSか画像で） -->
+                    </button>
+                  </div>
+                </article>
+              </div>
+
+              <!-- ページネーション -->
+              <div class="shop__pagination">
+                <ul class="shop__pagination-list">
+                  <li
+                    class="shop__pagination-item shop__pagination-item--active"
                   >
-                  <h3 class="news-card__title">
-                    <a href="#"
-                      >Urna cras et mauris congue nunc nisi nec tempus cursus</a
-                    >
-                  </h3>
-                </div>
-              </article>
-              <article class="news-card">
-                <div class="news-card__image">
-                  <img src="" alt="" />
-                  <span class="news-card__label">News</span>
-                </div>
-                <div class="news-card__content">
-                  <time class="news-card__date" datetime="2024-05-24"
-                    >24 May,2024</time
-                  >
-                  <h3 class="news-card__title">
-                    <a href="#"
-                      >Id tellus dignissim eu nisl aliquam. Massa id interdum
-                    </a>
-                  </h3>
-                </div>
-              </article>
-              <article class="news-card">
-                <div class="news-card__image">
-                  <img src="" alt="" />
-                  <span class="news-card__label">News</span>
-                </div>
-                <div class="news-card__content">
-                  <time class="news-card__date" datetime="2024-05-24"
-                    >24 May,2024</time
-                  >
-                  <h3 class="news-card__title">
-                    <a href="#"
-                      >mus cursus pellentesque blandit tortor suspendisse
-                      ornare</a
-                    >
-                  </h3>
-                </div>
-              </article>
+                    <a href="#">1</a>
+                  </li>
+                  <li class="shop__pagination-item">
+                    <a href="#">2</a>
+                  </li>
+                </ul>
+                <a href="#" class="shop__pagination-next">
+                  Next
+                  <!-- 矢印は後でCSSか画像で -->
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="shop-banners">
+        <div class="container">
+          <div class="shop-banners__wrapper">
+            <div class="shop-banners__list">
+              <a href="#" class="shop-banners__item">
+                <img src="" alt="" />
+              </a>
+              <a href="#" class="shop-banners__item">
+                <img src="" alt="" />
+              </a>
             </div>
           </div>
         </div>
