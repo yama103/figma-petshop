@@ -1,0 +1,25 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.linkedEditing": true,
+  "editor.renderWhitespace": "selection",
+
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  "editor.minimap.enabled": false,
+  "explorer.confirmDelete": false
+}
