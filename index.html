@@ -19,19 +19,19 @@
 
   <body>
     <header>
-      <section class="topbar">
+      <div class="topbar">
         <div class="container">
           <div class="topbar__wrapper">
             <div class="topbar__left">
               <ul class="topbar__contact-list">
                 <li class="topbar__contact-item">
-                  <img class="topbar__icon" src="" alt="phone" />
+                  <img class="topbar__icon" src="" alt="" />
                   <a class="topbar__contact-value" href="tel:+3798718371"
                     >+379 871-8371</a
                   >
                 </li>
                 <li class="topbar__contact-item">
-                  <img class="topbar__icon" src="" alt="mail" />
+                  <img class="topbar__icon" src="" alt="" />
                   <a
                     class="topbar__contact-value"
                     href="mailto:rgarton@outlook.com"
@@ -42,22 +42,22 @@
               </ul>
             </div>
             <div class="topbar__right">
-              <img class="topbar__icon" src="" alt="location" />
+              <img class="topbar__icon" src="" alt="" />
               <address class="topbar__contact-value">
                 8592 Fairground St. Tallahassee, FL 32303
               </address>
             </div>
           </div>
         </div>
-      </section>
-      <section class="header">
+      </div>
+      <div class="header">
         <div class="container">
           <div class="header__wrapper">
-            <div class="header__logo">
+            <a href="#" class="header__logo">
               <img class="header__logo-icon" src="" alt="" />
               <span>Pet Shop</span>
-            </div>
-            <div class="header__nav">
+            </a>
+            <nav class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item header__nav-item--active">
                   <a href="#">Home</a>
@@ -66,7 +66,7 @@
                 <li class="header__nav-item"><a href="#">About Us</a></li>
                 <li class="header__nav-item"><a href="#">Contact Us</a></li>
               </ul>
-            </div>
+            </nav>
             <div class="header__actions">
               <form class="header__search" action="#" method="get">
                 <input
@@ -74,16 +74,20 @@
                   type="search"
                   placeholder="Search products..."
                 />
-                <button class="header__search-button" type="button">
+                <button class="header__search-button" type="submit">
                   <img src="" alt="search" />
                 </button>
               </form>
-              <img class="header__favorites-icon" src="" alt="favorites" />
-              <img class="header__cart-icon" src="" alt="cart" />
+              <a href="#" class="header__favorites">
+                <img src="" alt="Favorites" />
+              </a>
+              <a href="#" class="header__cart">
+                <img src="" alt="Cart" />
+              </a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </header>
     <main>
       <section class="hero hero--home">
@@ -99,7 +103,7 @@
                 nullam. Mattis aenean scelerisque dui libero
               </p>
 
-              <button class="hero__button" type="button">Shop Now</button>
+              <a href="#" class="hero__button">Shop Now</a>
             </div>
           </div>
         </div>
@@ -583,7 +587,7 @@
                 <h3 class="footer__nav-title">Store</h3>
                 <ul class="footer__nav-list">
                   <li class="footer__nav-item">
-                    8592 Fairground St. Tallahassee, FL 32303
+                    <address>8592 Fairground St. Tallahassee, FL 32303</address>
                   </li>
                   <li class="footer__nav-item">
                     <a href="tel:+7753786348">+775 378-6348</a>
