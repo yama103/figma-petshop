@@ -63,10 +63,10 @@
                 <li class="header__nav-item">
                   <a href="#">Shop</a>
                 </li>
+                <li class="header__nav-item"><a href="#">About Us</a></li>
                 <li class="header__nav-item header__nav-item--active">
-                  <a href="#">About Us</a>
+                  <a href="#">Contact Us</a>
                 </li>
-                <li class="header__nav-item"><a href="#">Contact Us</a></li>
               </ul>
             </div>
             <div class="header__actions">
@@ -88,7 +88,7 @@
       </section>
     </header>
     <main>
-      <section class="hero hero--about">
+      <section class="hero hero--contact">
         <div class="container">
           <div class="hero__wrapper">
             <div class="hero__content">
@@ -108,186 +108,131 @@
           </div>
         </div>
       </section>
-      <section class="about-store">
+
+      <section class="contact">
         <div class="container">
-          <div class="about-store__wrapper">
-            <h2 class="about-store__title">About our store</h2>
+          <div class="contact__wrapper">
+            <form class="contact-form" action="#" method="post">
+              <div class="contact-form__body">
+                <div class="contact-form__row">
+                  <div class="contact-form__field">
+                    <label class="contact-form__label" for="first-name">
+                      First Name
+                    </label>
+                    <input
+                      id="first-name"
+                      class="contact-form__input"
+                      type="text"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div class="contact-form__field">
+                    <label class="contact-form__label" for="last-name">
+                      Last Name
+                    </label>
+                    <input
+                      id="last-name"
+                      class="contact-form__input"
+                      type="text"
+                      placeholder="Your last name"
+                    />
+                  </div>
+                </div>
+                <div class="contact-form__field">
+                  <label class="contact-form__label" for="email">
+                    Email Address
+                  </label>
 
-            <div class="about-store__content">
-              <p class="about-store__description">
-                At et vehicula sodales est proin turpis pellentesque sinulla a
-                aliquam amet rhoncus quisque eget sit. Sociis blandit et
-                pellentesque aliquet at quisque tortor lacinia nullam. Mattis
-                aenean scelerisque dui libero cras arcu in egestas sagittis.
-              </p>
+                  <input
+                    id="email"
+                    type="email"
+                    class="contact-form__input"
+                    placeholder="Your E-mail address"
+                  />
+                </div>
+                <div class="contact-form__message">
+                  <div class="contact-form__field">
+                    <label class="contact-form__label" for="message">
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      class="contact-form__textarea"
+                      placeholder="Your message..."
+                    ></textarea>
+                  </div>
 
-              <p class="about-store__description">
-                Aliquet ultrices risus dolor gravida. Faucibus sodales semper a
-                magnis sapien viverra purus sed tortor. Amet risus blandit nunc
-                odio rutrum. Adipiscing tincidunt imperdiet at cursus ipsum
-                vulputate pharetra. Tellus nulla commodo ut ut auctor orci
-                blandit at elit
-              </p>
-            </div>
-
-            <ul class="about-store__stats">
-              <li class="about-store__stat">
-                <span class="about-store__number">2k+</span>
-                <span class="about-store__label"> Happy Clients </span>
-              </li>
-              <li class="about-store__stat">
-                <span class="about-store__number">72</span>
-                <span class="about-store__label"> Brands </span>
-              </li>
-              <li class="about-store__stat">
-                <span class="about-store__number">1.8k+</span>
-                <span class="about-store__label"> Products </span>
-              </li>
-              <li class="about-store__stat">
-                <span class="about-store__number">28</span>
-                <span class="about-store__label"> Years in business </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="founder">
-        <div class="container">
-          <div class="founder__wrapper">
-            <div class="founder__img">
-              <img src="" alt="Taylor Joshua" />
-            </div>
-
-            <div class="founder__content">
-              <h2 class="founder__name">Taylor Joshua</h2>
-              <span class="founder__role">Founder</span>
-
-              <p class="founder__desc">
-                Nisl nunc vitae integer ridiculus ultrices quam a scelerisque
-                est. Sollicitudin volutpat blandit maecenas ornare dictum
-                tempor. Amet sem non rutrum et duis. Id nisi ac vitae enim neque
-                sapien. Eu arcu consectetur etiam bibendum fermentum sed
-                lobortis fringilla imperdiet. Aliquet ultrices risus dolor
-                gravida. Faucibus sodales semper a magnis sapien viverra purus
-                sed tortor. Amet risus blandit nunc odio rutrum
-              </p>
-
-              <img class="founder__sign" src="" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="team">
-        <div class="container">
-          <div class="team__wrapper">
-            <h2 class="team__title">Our Team</h2>
-
-            <ul class="team__list">
-              <li class="team__item">
-                <img class="team__img" src="" alt="" />
-                <p class="team__name">Caroline Washington</p>
-                <span class="team__role">Seller</span>
-              </li>
-              <li class="team__item">
-                <img class="team__img" src="" alt="" />
-                <p class="team__name">Gerald Ferguson</p>
-                <span class="team__role">Seller</span>
-              </li>
-              <li class="team__item">
-                <img class="team__img" src="" alt="" />
-                <p class="team__name">Averi Maddox</p>
-                <span class="team__role">Seller</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="testimonials">
-        <div class="container">
-          <div class="testimonials__wrapper">
-            <div class="testimonials__review">
-              <div class="testimonials__header">
-                <span class="testimonials__subtitle">Testimonials</span>
-                <h2 class="testimonials__title">What people say about us</h2>
+                  <button type="submit" class="button">Send Message</button>
+                </div>
               </div>
-              <div class="testimonials__body">
-                <ul class="testimonials__stars">
-                  <li class="testimonials__star">
-                    <img src="" alt="star" />
-                  </li>
-                  <li class="testimonials__star">
-                    <img src="" alt="star" />
-                  </li>
-                  <li class="testimonials__star">
-                    <img src="" alt="star" />
-                  </li>
-                  <li class="testimonials__star">
-                    <img src="" alt="star" />
-                  </li>
-                  <li class="testimonials__star">
-                    <img src="" alt="star" />
-                  </li>
-                </ul>
-                <p class="testimonials__desc">
-                  Morbi viverra eleifend in cras orci a leo tellus. Nunc purus
-                  adipiscing diam aliquet lorem nunc. Ipsum euismod risus amet
-                  eget non. Pulvinar condimentum ultricies tellus a non
-                  pellentesque odio pellentesque blandit. Aliquet et massa eget
-                  vitae justo tellus donec ac enim. Rhoncus adipiscing cursus
+            </form>
+
+            <div class="contact__info">
+              <div class="contact__header">
+                <h2 class="contact__title">Feel free to contact us</h2>
+                <p class="contact__desc">
+                  At et vehicula sodales est proin turpis pellentesque sinulla a
+                  aliquam amet rhoncus quisque eget sit. Sociis blandit et
+                  pellentesque aliquet at quisque tortor lacinia nullam
                 </p>
               </div>
-              <div class="testimonials__reviewer">
-                <div class="testimonials__info">
-                  <p class="testimonials__name">Gerald Ferguson</p>
-                  <span class="testimonials__role">Customer</span>
-                </div>
-                <div class="testimonials__arrow">
-                  <button type="button">
-                    <img src="" alt="Previous" />
-                  </button>
-
-                  <button type="button">
-                    <img src="" alt="Next" />
-                  </button>
-                </div>
+              <div class="contact__content">
+                <ul class="contact__list">
+                  <li class="contact__item">
+                    <img
+                      class="contact__img"
+                      src="images/location-contact.svg"
+                      alt=""
+                    />
+                    <address class="contact__value">
+                      8592 Fairground St.Tallahassee, FL 32303
+                    </address>
+                  </li>
+                  <li class="contact__item">
+                    <img
+                      class="contact__img"
+                      src="images/email-contact.svg"
+                      alt=""
+                    />
+                    <a class="contact__value" href="mailto:rgarton@outlook.com"
+                      >rgarton@outlook.com</a
+                    >
+                  </li>
+                  <li class="contact__item">
+                    <img
+                      class="contact__img"
+                      src="images/phone-contact.svg"
+                      alt=""
+                    />
+                    <a class="contact__value" href="tel:+7753786348"
+                      >+775 378-6348</a
+                    >
+                  </li>
+                  <li class="contact__item">
+                    <img
+                      class="contact__img"
+                      src="images/clock-contact.svg"
+                      alt=""
+                    />
+                    <p class="contact__value">Mon - Fri: 10AM - 10PM</p>
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="testimonials__img">
-              <img src="" alt="customer" />
-            </div>
           </div>
         </div>
       </section>
-      <section class="video">
+      <section class="map">
         <div class="container">
-          <div class="video__wrapper">
-            <div class="video__image">
-              <img src="..." alt="" />
-              <button type="button" class="video__play">
-                <img src="..." alt="Play" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="instagram">
-        <div class="container">
-          <div class="instagram__wrapper">
-            <h2 class="instagram__title">Follow our instagram</h2>
-            <ul class="instagram__images">
-              <li class="instagram__image">
-                <a href=""><img src="" alt="" /></a>
-              </li>
-              <li class="instagram__image">
-                <a href=""><img src="" alt="" /></a>
-              </li>
-              <li class="instagram__image">
-                <a href=""><img src="" alt="" /></a>
-              </li>
-              <li class="instagram__image">
-                <a href=""><img src="" alt="" /></a>
-              </li>
-            </ul>
+          <div class="map__wrapper">
+            <iframe
+              class="map__frame"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220090.31858830675!2d-84.41872744102797!3d30.46695240732906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ecf553425e0061%3A0x8594a14791b044d!2z44OO44O844K544O744OV44Ot44Oq44OA44O744OV44Kn44Ki!5e0!3m2!1sen!2sus!4v1788399584889!5m2!1sen!2sus"
+              title="Pet Shop location"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </section>
