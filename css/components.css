@@ -1,0 +1,60 @@
+/* =========================
+   Button
+========================= */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 17px 40px;
+  border-radius: 12px;
+  background-color: #090706;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+/* =========================
+   Badge
+========================= */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 17px 40px;
+  border-radius: 20px;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+/* =========================
+   Product Card
+========================= */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: 306px;
+  height: auto;
+}
+.product-card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+.product-card__info-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.product-card__name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+}
+.product-card__price {
+  font-weight: 500;
+  font-size: 16px;
+}
