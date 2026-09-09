@@ -71,7 +71,7 @@
                 src="images/common/site-logo.svg"
                 alt=""
               />
-              <span>Pet Shop</span>
+              <span class="header__logo-name">Pet Shop</span>
             </a>
             <nav class="header__nav">
               <ul class="header__nav-list">
@@ -112,19 +112,17 @@
         <div class="container">
           <div class="hero__wrapper">
             <div class="hero__content">
-              <span class="hero__subtitle">Pet shop</span>
+              <div class="hero__heading">
+                <span class="hero__subtitle">Pet shop</span>
 
-              <h1 class="hero__title">
-                The friendly and caring small pet store
-              </h1>
-
+                <h1 class="hero__title">
+                  The friendly and caring small pet store
+                </h1>
+              </div>
               <p class="hero__description">
                 At et vehicula sodales est proin turpis pellentesque sinulla a
                 aliquam amet rhoncus quisque eget sit
               </p>
-            </div>
-            <div class="hero__image">
-              <img src="images/hero/hero-shop.webp" alt="" />
             </div>
           </div>
         </div>
@@ -151,16 +149,18 @@
             </div>
 
             <ul class="shop-by-pet__list">
-              <li class="shop-by-pet__item shop-by-pet__item--active">
-                <a href="#">
+              <li class="shop-by-pet__item">
+                <a class="shop-by-pet__link" href="#">
                   <div class="shop-by-pet__icon">
                     <img src="images/common/cat.webp" alt="Cat" />
                   </div>
-                  <span class="shop-by-pet__name">Cat</span>
+                  <span class="shop-by-pet__name shop-by-pet__name--active"
+                    >Cat</span
+                  >
                 </a>
               </li>
               <li class="shop-by-pet__item">
-                <a href="#">
+                <a class="shop-by-pet__link" href="#">
                   <div class="shop-by-pet__icon">
                     <img src="images/common/hamster.webp" alt="Hamster" />
                   </div>
@@ -168,7 +168,7 @@
                 </a>
               </li>
               <li class="shop-by-pet__item">
-                <a href="#">
+                <a class="shop-by-pet__link" href="#">
                   <div class="shop-by-pet__icon">
                     <img src="images/common/dog.webp" alt="Dog" />
                   </div>
@@ -176,7 +176,7 @@
                 </a>
               </li>
               <li class="shop-by-pet__item">
-                <a href="#">
+                <a class="shop-by-pet__link" href="#">
                   <div class="shop-by-pet__icon">
                     <img src="images/common/parrot.webp" alt="Parrot" />
                   </div>
@@ -184,7 +184,7 @@
                 </a>
               </li>
               <li class="shop-by-pet__item">
-                <a href="#">
+                <a class="shop-by-pet__link" href="#">
                   <div class="shop-by-pet__icon">
                     <img src="images/common/rabbit.webp" alt="Rabbit" />
                   </div>
@@ -192,7 +192,7 @@
                 </a>
               </li>
               <li class="shop-by-pet__item">
-                <a href="#">
+                <a class="shop-by-pet__link" href="#">
                   <div class="shop-by-pet__icon">
                     <img src="images/common/turtle.webp" alt="Turtle" />
                   </div>
@@ -210,48 +210,60 @@
             <aside class="shop__sidebar">
               <form class="shop__filters" action="#" method="get">
                 <!-- Filter by categories -->
-                <div class="filter">
+                <div class="filter__categories-wrapper">
                   <h3 class="filter__title">Filter by categories</h3>
                   <ul class="filter__list">
                     <li class="filter__item">
-                      <label>
-                        <input type="checkbox" />
-                        <span>Furniture</span>
+                      <label class="filter__content">
+                        <div class="filter__name">
+                          <input type="checkbox" />
+                          <span>Furniture</span>
+                        </div>
                         <span class="filter__count">21</span>
                       </label>
                     </li>
                     <li class="filter__item">
-                      <label>
-                        <input type="checkbox" />
-                        <span>Bowls</span>
+                      <label class="filter__content">
+                        <div class="filter__name">
+                          <input type="checkbox" />
+                          <span>Bowls</span>
+                        </div>
                         <span class="filter__count">28</span>
                       </label>
                     </li>
                     <li class="filter__item">
-                      <label>
-                        <input type="checkbox" />
-                        <span>Clothing</span>
+                      <label class="filter__content">
+                        <div class="filter__name">
+                          <input type="checkbox" />
+                          <span>Clothing</span>
+                        </div>
                         <span class="filter__count">12</span>
                       </label>
                     </li>
                     <li class="filter__item">
-                      <label>
-                        <input type="checkbox" />
-                        <span>Food</span>
+                      <label class="filter__content">
+                        <div class="filter__name">
+                          <input type="checkbox" />
+                          <span>Food</span>
+                        </div>
                         <span class="filter__count">80</span>
                       </label>
                     </li>
                     <li class="filter__item">
-                      <label>
-                        <input type="checkbox" />
-                        <span>Toys</span>
+                      <label class="filter__content">
+                        <div class="filter__name">
+                          <input type="checkbox" />
+                          <span>Toys</span>
+                        </div>
                         <span class="filter__count">90</span>
                       </label>
                     </li>
                     <li class="filter__item">
-                      <label>
-                        <input type="checkbox" />
-                        <span>Sale</span>
+                      <label class="filter__content">
+                        <div class="filter__name">
+                          <input type="checkbox" />
+                          <span>Sale</span>
+                        </div>
                         <span class="filter__count">24</span>
                       </label>
                     </li>
@@ -259,13 +271,13 @@
                 </div>
 
                 <!-- Filter by Price -->
-                <div class="filter">
+                <div class="filter__price-wrapper">
                   <h3 class="filter__title">Filter by Price</h3>
                   <div class="filter__price">
                     <input type="range" min="9" max="399" />
                     <div class="filter__price-info">
                       <span>Price: $9 - $399</span>
-                      <button type="submit" class="filter__price-button">
+                      <button type="submit" class="button filter__price-button">
                         Apply
                       </button>
                     </div>
@@ -273,48 +285,60 @@
                 </div>
 
                 <!-- Filter by brands -->
-                <div class="filter">
+                <div class="filter__brands-wrapper">
                   <h3 class="filter__title">Filter by brands</h3>
                   <ul class="filter__list">
                     <li class="filter__item">
-                      <label>
-                        <input type="checkbox" />
-                        <span>Natural food</span>
+                      <label class="filter__content">
+                        <div class="filter__name">
+                          <input type="checkbox" />
+                          <span>Natural food</span>
+                        </div>
                         <span class="filter__count">28</span>
                       </label>
                     </li>
                     <li class="filter__item">
-                      <label>
-                        <input type="checkbox" />
-                        <span>Pet care</span>
+                      <label class="filter__content">
+                        <div class="filter__name">
+                          <input type="checkbox" />
+                          <span>Pet care</span>
+                        </div>
                         <span class="filter__count">18</span>
                       </label>
                     </li>
                     <li class="filter__item">
-                      <label>
-                        <input type="checkbox" />
-                        <span>Dogs friend</span>
+                      <label class="filter__content">
+                        <div class="filter__name">
+                          <input type="checkbox" />
+                          <span>Dogs friend</span>
+                        </div>
                         <span class="filter__count">16</span>
                       </label>
                     </li>
                     <li class="filter__item">
-                      <label>
-                        <input type="checkbox" />
-                        <span>Pet food</span>
+                      <label class="filter__content">
+                        <div class="filter__name">
+                          <input type="checkbox" />
+                          <span>Pet food</span>
+                        </div>
                         <span class="filter__count">40</span>
                       </label>
                     </li>
                     <li class="filter__item">
-                      <label>
-                        <input type="checkbox" />
-                        <span>Favorite pet</span>
+                      <label class="filter__content">
+                        <div class="filter__name">
+                          <input type="checkbox" />
+                          <span>Favorite pet</span>
+                        </div>
                         <span class="filter__count">28</span>
                       </label>
                     </li>
                     <li class="filter__item">
-                      <label>
-                        <input type="checkbox" />
-                        <span>Green line</span>
+                      <label class="filter__content">
+                        <div class="filter__name">
+                          <input type="checkbox" />
+                          <span>Green line</span>
+                        </div>
                         <span class="filter__count">18</span>
                       </label>
                     </li>
@@ -322,7 +346,7 @@
                 </div>
 
                 <!-- Filter by tags -->
-                <div class="filter">
+                <div class="filter__tags-wrapper">
                   <h3 class="filter__title">Filter by tags</h3>
                   <div class="filter__tags">
                     <button type="button" class="filter__tag">Dog food</button>
@@ -334,7 +358,7 @@
                   </div>
                 </div>
               </form>
-              <div class="popular-products">
+              <div class="popular-products-wrapper">
                 <h3 class="popular-products__title">Popular products</h3>
                 <ul class="popular-products__list">
                   <li class="popular-products__item">
@@ -639,9 +663,9 @@
                     <a href="#">2</a>
                   </li>
                 </ul>
-                <a href="#" class="shop__pagination-next">
-                  Next
-                  <!-- 矢印は後でCSSか画像で -->
+                <a class="shop__pagination-next" href="#">
+                  <span href="#" class="shop__pagination-text"> Next </span>
+                  <img src="images/common/pagination-next.svg" alt="" />
                 </a>
               </div>
             </div>
@@ -704,53 +728,51 @@
             </div>
 
             <!-- 右側：リンクグループ -->
-            <div class="footer__nav">
-              <div class="footer__nav-group">
-                <h3 class="footer__nav-title">Company</h3>
-                <ul class="footer__nav-list">
-                  <li class="footer__nav-item"><a href="#">About Us</a></li>
-                  <li class="footer__nav-item"><a href="#">Blog</a></li>
-                  <li class="footer__nav-item"><a href="#">Gift cards</a></li>
-                  <li class="footer__nav-item"><a href="#">Careers</a></li>
-                </ul>
-              </div>
+            <div class="footer__nav-group">
+              <h3 class="footer__nav-title">Company</h3>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a href="#">About Us</a></li>
+                <li class="footer__nav-item"><a href="#">Blog</a></li>
+                <li class="footer__nav-item"><a href="#">Gift cards</a></li>
+                <li class="footer__nav-item"><a href="#">Careers</a></li>
+              </ul>
+            </div>
 
-              <div class="footer__nav-group">
-                <h3 class="footer__nav-title">Useful Links</h3>
-                <ul class="footer__nav-list">
-                  <li class="footer__nav-item"><a href="#">New products</a></li>
-                  <li class="footer__nav-item"><a href="#">Best sellers</a></li>
-                  <li class="footer__nav-item"><a href="#">Discount</a></li>
-                  <li class="footer__nav-item"><a href="#">F.A.Q</a></li>
-                </ul>
-              </div>
+            <div class="footer__nav-group">
+              <h3 class="footer__nav-title">Useful Links</h3>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a href="#">New products</a></li>
+                <li class="footer__nav-item"><a href="#">Best sellers</a></li>
+                <li class="footer__nav-item"><a href="#">Discount</a></li>
+                <li class="footer__nav-item"><a href="#">F.A.Q</a></li>
+              </ul>
+            </div>
 
-              <div class="footer__nav-group">
-                <h3 class="footer__nav-title">Customer Service</h3>
-                <ul class="footer__nav-list">
-                  <li class="footer__nav-item"><a href="#">Contact Us</a></li>
-                  <li class="footer__nav-item"><a href="#">Shipping</a></li>
-                  <li class="footer__nav-item"><a href="#">Returns</a></li>
-                  <li class="footer__nav-item">
-                    <a href="#">Order tracking</a>
-                  </li>
-                </ul>
-              </div>
+            <div class="footer__nav-group">
+              <h3 class="footer__nav-title">Customer Service</h3>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a href="#">Contact Us</a></li>
+                <li class="footer__nav-item"><a href="#">Shipping</a></li>
+                <li class="footer__nav-item"><a href="#">Returns</a></li>
+                <li class="footer__nav-item">
+                  <a href="#">Order tracking</a>
+                </li>
+              </ul>
+            </div>
 
-              <div class="footer__nav-group">
-                <h3 class="footer__nav-title">Store</h3>
-                <ul class="footer__nav-list">
-                  <li class="footer__nav-item">
-                    <address>8592 Fairground St. Tallahassee, FL 32303</address>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="tel:+7753786348">+775 378-6348</a>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="mailto:rgarton@outlook.com">rgarton@outlook.com</a>
-                  </li>
-                </ul>
-              </div>
+            <div class="footer__nav-group">
+              <h3 class="footer__nav-title">Store</h3>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <address>8592 Fairground St. Tallahassee, FL 32303</address>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="tel:+7753786348">+775 378-6348</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="mailto:rgarton@outlook.com">rgarton@outlook.com</a>
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -760,7 +782,10 @@
             </p>
             <div class="footer__payments">
               <!-- VISAなどのアイコン -->
-              <img src="images/common/footer-payment-method.svg" alt="" />
+              <img
+                src="images/common/footer-payment-method.svg"
+                alt="Accepted payment methods"
+              />
             </div>
           </div>
         </div>

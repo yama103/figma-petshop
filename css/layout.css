@@ -196,3 +196,84 @@
   font-size: 14px;
   color: rgba(0, 0, 0, 0.5);
 }
+
+/* =========================
+   Hero
+========================= */
+.hero__content {
+  padding-block: 130px;
+}
+
+.hero__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero__subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  color: #f97316;
+}
+
+.hero__title {
+  max-width: 647px;
+  font-weight: 700;
+  font-size: 54px;
+}
+
+.hero__description {
+  max-width: 479px;
+}
+
+/* =========================
+   Shop-by-pet
+========================= */
+.shop-by-pet {
+  padding-block: 60px;
+}
+
+.shop-by-pet__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.shop-by-pet__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop-by-pet__title {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.shop-by-pet__controls {
+  display: flex;
+  gap: 40px;
+}
+
+.shop-by-pet__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.shop-by-pet__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+}
+
+.shop-by-pet__name {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+.shop-by-pet__name--active {
+  color: #f97316;
+  border-bottom: 3px solid #f97316;
+}
