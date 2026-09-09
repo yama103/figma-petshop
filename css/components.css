@@ -22,12 +22,12 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 17px 40px;
+  padding: 3px 20px;
   border-radius: 20px;
   background-color: #000;
   color: #fff;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
 }
 /* =========================
    Product Card
@@ -35,7 +35,7 @@
 .product-card {
   display: flex;
   flex-direction: column;
-  width: 306px;
+  width: 100%;
   height: auto;
 }
 .product-card__info {
@@ -43,6 +43,7 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
+  background-color: #f5f5f5;
 }
 .product-card__info-contents {
   display: flex;

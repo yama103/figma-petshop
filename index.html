@@ -110,10 +110,13 @@
         <div class="container">
           <div class="hero__wrapper">
             <div class="hero__content">
-              <span class="hero__subtitle">Pet shop</span>
+              <div class="hero__heading">
+                <span class="hero__subtitle">Pet shop</span>
 
-              <h1 class="hero__title">A pet store with everything you need</h1>
-
+                <h1 class="hero__title">
+                  A pet store with everything you need
+                </h1>
+              </div>
               <p class="hero__description">
                 Sociis blandit et pellentesque aliquet at quisque tortor lacinia
                 nullam. Mattis aenean scelerisque dui libero
@@ -153,49 +156,60 @@
                 <div class="category-card__image">
                   <img src="images/common/accessories.webp" alt="Accessories" />
                 </div>
-                <div class="category-card__info">
-                  <h3 class="category-card__name">Accessories</h3>
-                  <span class="category-card__count">84 products</span>
+                <div class="category-card__contents">
+                  <div class="category-card__info">
+                    <h3 class="category-card__name">Accessories</h3>
+                    <span class="category-card__count">84 products</span>
+                  </div>
+                  <span class="category-card__arrow">
+                    <img
+                      src="images/common/arrow-right.svg"
+                      alt="Accessories"
+                    />
+                  </span>
                 </div>
-                <span class="category-card__arrow">
-                  <!-- 右向きの小さな矢印アイコン -->
-                </span>
               </a>
               <a href="#" class="category-card">
                 <div class="category-card__image">
                   <img src="images/common/food.webp" alt="Food" />
                 </div>
-                <div class="category-card__info">
-                  <h3 class="category-card__name">Food</h3>
-                  <span class="category-card__count">64 products</span>
+                <div class="category-card__contents">
+                  <div class="category-card__info">
+                    <h3 class="category-card__name">Food</h3>
+                    <span class="category-card__count">64 products</span>
+                  </div>
+                  <span class="category-card__arrow">
+                    <img src="images/common/arrow-right.svg" alt="Food" />
+                  </span>
                 </div>
-                <span class="category-card__arrow">
-                  <!-- 右向きの小さな矢印アイコン -->
-                </span>
               </a>
               <a href="#" class="category-card">
                 <div class="category-card__image">
                   <img src="images/common/furniture.webp" alt="Furniture" />
                 </div>
-                <div class="category-card__info">
-                  <h3 class="category-card__name">Furniture</h3>
-                  <span class="category-card__count">22 products</span>
+                <div class="category-card__contents">
+                  <div class="category-card__info">
+                    <h3 class="category-card__name">Furniture</h3>
+                    <span class="category-card__count">22 products</span>
+                  </div>
+                  <span class="category-card__arrow">
+                    <img src="images/common/arrow-right.svg" alt="Furniture" />
+                  </span>
                 </div>
-                <span class="category-card__arrow">
-                  <!-- 右向きの小さな矢印アイコン -->
-                </span>
               </a>
               <a href="#" class="category-card">
                 <div class="category-card__image">
                   <img src="images/common/bags.webp" alt="Bags" />
                 </div>
-                <div class="category-card__info">
-                  <h3 class="category-card__name">Bags</h3>
-                  <span class="category-card__count">16 products</span>
+                <div class="category-card__contents">
+                  <div class="category-card__info">
+                    <h3 class="category-card__name">Bags</h3>
+                    <span class="category-card__count">16 products</span>
+                  </div>
+                  <span class="category-card__arrow">
+                    <img src="images/common/arrow-right.svg" alt="Bags" />
+                  </span>
                 </div>
-                <span class="category-card__arrow">
-                  <!-- 右向きの小さな矢印アイコン -->
-                </span>
               </a>
             </div>
           </div>
@@ -266,21 +280,22 @@
       <section class="promo">
         <div class="container">
           <div class="promo__wrapper">
-            <!-- 左側：イラスト -->
-            <div class="promo__image">
-              <!-- ここに猫のイラスト画像（または背景画像） -->
-            </div>
-
             <!-- 右側：テキスト -->
             <div class="promo__content">
-              <span class="promo__subtitle">Pet Shop</span>
-              <h2 class="promo__title">The smarter way to shop for your pet</h2>
-              <p class="promo__desc">
-                Lorem ipsum dolor sit amet consectetur. At et vehicula sodales
-                est proin turpis pellentesque sinulla a aliquam amet rhoncus
-                quisque eget sit
-              </p>
-              <a href="#" class="promo__button">Learn More</a>
+              <div class="promo__body">
+                <div class="promo__heading">
+                  <span class="promo__subtitle">Pet Shop</span>
+                  <h2 class="promo__title">
+                    The smarter way to shop for your pet
+                  </h2>
+                </div>
+                <p class="promo__desc">
+                  Lorem ipsum dolor sit amet consectetur. At et vehicula sodales
+                  est proin turpis pellentesque sinulla a aliquam amet rhoncus
+                  quisque eget sit
+                </p>
+              </div>
+              <a href="#" class="button promo__button">Learn More</a>
             </div>
           </div>
         </div>
@@ -502,16 +517,18 @@
             </div>
 
             <ul class="shop-by-pet__list">
-              <li class="shop-by-pet__item shop-by-pet__item--active">
-                <a href="#">
+              <li class="shop-by-pet__item">
+                <a class="shop-by-pet__link" href="#">
                   <div class="shop-by-pet__icon">
                     <img src="images/common/cat.webp" alt="Cat" />
                   </div>
-                  <span class="shop-by-pet__name">Cat</span>
+                  <span class="shop-by-pet__name shop-by-pet__name--active"
+                    >Cat</span
+                  >
                 </a>
               </li>
               <li class="shop-by-pet__item">
-                <a href="#">
+                <a class="shop-by-pet__link" href="#">
                   <div class="shop-by-pet__icon">
                     <img src="images/common/hamster.webp" alt="Hamster" />
                   </div>
@@ -519,7 +536,7 @@
                 </a>
               </li>
               <li class="shop-by-pet__item">
-                <a href="#">
+                <a class="shop-by-pet__link" href="#">
                   <div class="shop-by-pet__icon">
                     <img src="images/common/dog.webp" alt="Dog" />
                   </div>
@@ -527,7 +544,7 @@
                 </a>
               </li>
               <li class="shop-by-pet__item">
-                <a href="#">
+                <a class="shop-by-pet__link" href="#">
                   <div class="shop-by-pet__icon">
                     <img src="images/common/parrot.webp" alt="Parrot" />
                   </div>
@@ -535,7 +552,7 @@
                 </a>
               </li>
               <li class="shop-by-pet__item">
-                <a href="#">
+                <a class="shop-by-pet__link" href="#">
                   <div class="shop-by-pet__icon">
                     <img src="images/common/rabbit.webp" alt="Rabbit" />
                   </div>
@@ -543,7 +560,7 @@
                 </a>
               </li>
               <li class="shop-by-pet__item">
-                <a href="#">
+                <a class="shop-by-pet__link" href="#">
                   <div class="shop-by-pet__icon">
                     <img src="images/common/turtle.webp" alt="Turtle" />
                   </div>
