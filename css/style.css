@@ -537,3 +537,290 @@ input[type="range"]::-webkit-slider-thumb {
   gap: 24px;
 }
 
+/* =========================
+   Hero About
+========================= */
+.hero--about {
+  background-image: url("../images/hero/hero-about.webp");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+.hero--about .hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.hero__button {
+  align-self: flex-start;
+  padding-inline: 40px;
+}
+
+/* =========================
+   About Store
+========================= */
+.about-store {
+  padding-block: 60px;
+}
+
+.about-store__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+}
+
+.about-store__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-store__title {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.about-store__content {
+  display: flex;
+  gap: 110px;
+}
+
+.about-store__description {
+  max-width: 580px;
+}
+
+.about-store__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-store__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-store__number {
+  font-weight: 600;
+  font-size: 32px;
+  color: #f97316;
+  line-height: 1;
+}
+
+.about-store__label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* =========================
+   Founder
+========================= */
+.founder {
+  padding-block: 60px;
+}
+
+.founder__wrapper {
+  display: flex;
+  gap: 110px;
+}
+
+.founder__content {
+  display: flex;
+  flex-direction: column;
+  padding-block: 80px;
+}
+
+.founder__body {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.founder__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.founder__name {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1;
+}
+
+.founder__role {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.founder__desc {
+  max-width: 636px;
+}
+
+.founder__sign {
+  width: 186px;
+  height: auto;
+  padding-top: 26px;
+}
+
+/* =========================
+   Team
+========================= */
+.team {
+  padding-block: 60px 120px;
+}
+
+.team__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.team__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.team__list {
+  display: flex;
+  gap: 24px;
+}
+
+.team__item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.team__member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.team__name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.team__role {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* =========================
+   Testimonials
+========================= */
+.testimonials {
+  padding-bottom: 48px;
+}
+
+.testimonials__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 72px;
+}
+
+.testimonials__review {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.testimonials__header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonials__subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  color: #f97316;
+}
+
+.testimonials__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.testimonials__body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.testimonials__stars {
+  display: flex;
+  gap: 12px;
+}
+
+.testimonials__desc {
+  max-width: 680px;
+}
+
+.testimonials__reviewer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonials__contents {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.testimonials__info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.testimonials__name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.testimonials__role {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.testimonials__arrow {
+  display: flex;
+  gap: 40px;
+}
+
+.testimonials__img {
+  width: 567px;
+  height: 540px;
+  background-image: url("../images/common/testimonials-back.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+}
+
+.testimonials__person {
+  position: absolute;
+  width: 366px;
+  height: 366px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}

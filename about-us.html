@@ -71,17 +71,17 @@
                 src="images/common/site-logo.svg"
                 alt=""
               />
-              <span>Pet Shop</span>
+              <span class="header__logo-name">Pet Shop</span>
             </a>
             <nav class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
                   <a href="#">Home</a>
                 </li>
-                <li class="header__nav-item"><a href="#">Shop</a></li>
                 <li class="header__nav-item header__nav-item--active">
-                  <a href="#">About Us</a>
+                  <a href="#">Shop</a>
                 </li>
+                <li class="header__nav-item"><a href="#">About Us</a></li>
                 <li class="header__nav-item"><a href="#">Contact Us</a></li>
               </ul>
             </nav>
@@ -124,7 +124,7 @@
                 aliquam amet rhoncus quisque eget sit
               </p>
 
-              <a href="#" class="hero__button">Shop Now</a>
+              <a href="#" class="button hero__button">Shop Now</a>
             </div>
           </div>
         </div>
@@ -132,23 +132,25 @@
       <section class="about-store">
         <div class="container">
           <div class="about-store__wrapper">
-            <h2 class="about-store__title">About our store</h2>
+            <div class="about-store__heading">
+              <h2 class="about-store__title">About our store</h2>
 
-            <div class="about-store__content">
-              <p class="about-store__description">
-                At et vehicula sodales est proin turpis pellentesque sinulla a
-                aliquam amet rhoncus quisque eget sit. Sociis blandit et
-                pellentesque aliquet at quisque tortor lacinia nullam. Mattis
-                aenean scelerisque dui libero cras arcu in egestas sagittis.
-              </p>
+              <div class="about-store__content">
+                <p class="about-store__description">
+                  At et vehicula sodales est proin turpis pellentesque sinulla a
+                  aliquam amet rhoncus quisque eget sit. Sociis blandit et
+                  pellentesque aliquet at quisque tortor lacinia nullam. Mattis
+                  aenean scelerisque dui libero cras arcu in egestas sagittis.
+                </p>
 
-              <p class="about-store__description">
-                Aliquet ultrices risus dolor gravida. Faucibus sodales semper a
-                magnis sapien viverra purus sed tortor. Amet risus blandit nunc
-                odio rutrum. Adipiscing tincidunt imperdiet at cursus ipsum
-                vulputate pharetra. Tellus nulla commodo ut ut auctor orci
-                blandit at elit
-              </p>
+                <p class="about-store__description">
+                  Aliquet ultrices risus dolor gravida. Faucibus sodales semper
+                  a magnis sapien viverra purus sed tortor. Amet risus blandit
+                  nunc odio rutrum. Adipiscing tincidunt imperdiet at cursus
+                  ipsum vulputate pharetra. Tellus nulla commodo ut ut auctor
+                  orci blandit at elit
+                </p>
+              </div>
             </div>
 
             <ul class="about-store__stats">
@@ -176,24 +178,30 @@
         <div class="container">
           <div class="founder__wrapper">
             <div class="founder__img">
-              <img src="images/common/founder.webp" alt="Taylor Joshua" />
+              <img src="images/team/founder.webp" alt="Taylor Joshua" />
             </div>
 
             <div class="founder__content">
-              <h2 class="founder__name">Taylor Joshua</h2>
-              <span class="founder__role">Founder</span>
-
-              <p class="founder__desc">
-                Nisl nunc vitae integer ridiculus ultrices quam a scelerisque
-                est. Sollicitudin volutpat blandit maecenas ornare dictum
-                tempor. Amet sem non rutrum et duis. Id nisi ac vitae enim neque
-                sapien. Eu arcu consectetur etiam bibendum fermentum sed
-                lobortis fringilla imperdiet. Aliquet ultrices risus dolor
-                gravida. Faucibus sodales semper a magnis sapien viverra purus
-                sed tortor. Amet risus blandit nunc odio rutrum
-              </p>
-
-              <img class="founder__sign" src="" alt="" />
+              <div class="founder__body">
+                <div class="founder__heading">
+                  <h2 class="founder__name">Taylor Joshua</h2>
+                  <span class="founder__role">Founder</span>
+                </div>
+                <p class="founder__desc">
+                  Nisl nunc vitae integer ridiculus ultrices quam a scelerisque
+                  est. Sollicitudin volutpat blandit maecenas ornare dictum
+                  tempor. Amet sem non rutrum et duis. Id nisi ac vitae enim
+                  neque sapien. Eu arcu consectetur etiam bibendum fermentum sed
+                  lobortis fringilla imperdiet. Aliquet ultrices risus dolor
+                  gravida. Faucibus sodales semper a magnis sapien viverra purus
+                  sed tortor. Amet risus blandit nunc odio rutrum
+                </p>
+              </div>
+              <img
+                class="founder__sign"
+                src="images/team/founder-sign.svg"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -210,8 +218,10 @@
                   src="images/team/Caroline Washington.webp"
                   alt=""
                 />
-                <p class="team__name">Caroline Washington</p>
-                <span class="team__role">Seller</span>
+                <div class="team__member">
+                  <p class="team__name">Caroline Washington</p>
+                  <span class="team__role">Seller</span>
+                </div>
               </li>
               <li class="team__item">
                 <img
@@ -219,8 +229,10 @@
                   src="images/team/Gerald Ferguson.webp"
                   alt=""
                 />
-                <p class="team__name">Gerald Ferguson</p>
-                <span class="team__role">Seller</span>
+                <div class="team__member">
+                  <p class="team__name">Gerald Ferguson</p>
+                  <span class="team__role">Seller</span>
+                </div>
               </li>
               <li class="team__item">
                 <img
@@ -228,8 +240,10 @@
                   src="images/team/Averi Maddox.webp"
                   alt=""
                 />
-                <p class="team__name">Averi Maddox</p>
-                <span class="team__role">Seller</span>
+                <div class="team__member">
+                  <p class="team__name">Averi Maddox</p>
+                  <span class="team__role">Seller</span>
+                </div>
               </li>
             </ul>
           </div>
@@ -239,35 +253,38 @@
         <div class="container">
           <div class="testimonials__wrapper">
             <div class="testimonials__review">
-              <div class="testimonials__header">
-                <span class="testimonials__subtitle">Testimonials</span>
-                <h2 class="testimonials__title">What people say about us</h2>
-              </div>
-              <div class="testimonials__body">
-                <ul class="testimonials__stars">
-                  <li class="testimonials__star">
-                    <img src="images/common/star.svg" alt="star" />
-                  </li>
-                  <li class="testimonials__star">
-                    <img src="images/common/star.svg" alt="star" />
-                  </li>
-                  <li class="testimonials__star">
-                    <img src="images/common/star.svg" alt="star" />
-                  </li>
-                  <li class="testimonials__star">
-                    <img src="images/common/star.svg" alt="star" />
-                  </li>
-                  <li class="testimonials__star">
-                    <img src="images/common/star.svg" alt="star" />
-                  </li>
-                </ul>
-                <p class="testimonials__desc">
-                  Morbi viverra eleifend in cras orci a leo tellus. Nunc purus
-                  adipiscing diam aliquet lorem nunc. Ipsum euismod risus amet
-                  eget non. Pulvinar condimentum ultricies tellus a non
-                  pellentesque odio pellentesque blandit. Aliquet et massa eget
-                  vitae justo tellus donec ac enim. Rhoncus adipiscing cursus
-                </p>
+              <div class="testimonials__contents">
+                <div class="testimonials__header">
+                  <span class="testimonials__subtitle">Testimonials</span>
+                  <h2 class="testimonials__title">What people say about us</h2>
+                </div>
+                <div class="testimonials__body">
+                  <ul class="testimonials__stars">
+                    <li class="testimonials__star">
+                      <img src="images/common/star.svg" alt="star" />
+                    </li>
+                    <li class="testimonials__star">
+                      <img src="images/common/star.svg" alt="star" />
+                    </li>
+                    <li class="testimonials__star">
+                      <img src="images/common/star.svg" alt="star" />
+                    </li>
+                    <li class="testimonials__star">
+                      <img src="images/common/star.svg" alt="star" />
+                    </li>
+                    <li class="testimonials__star">
+                      <img src="images/common/star.svg" alt="star" />
+                    </li>
+                  </ul>
+                  <p class="testimonials__desc">
+                    Morbi viverra eleifend in cras orci a leo tellus. Nunc purus
+                    adipiscing diam aliquet lorem nunc. Ipsum euismod risus amet
+                    eget non. Pulvinar condimentum ultricies tellus a non
+                    pellentesque odio pellentesque blandit. Aliquet et massa
+                    eget vitae justo tellus donec ac enim. Rhoncus adipiscing
+                    cursus
+                  </p>
+                </div>
               </div>
               <div class="testimonials__reviewer">
                 <div class="testimonials__info">
@@ -286,7 +303,11 @@
               </div>
             </div>
             <div class="testimonials__img">
-              <img src="" alt="customer" />
+              <img
+                class="testimonials__person"
+                src="images/common/testimonials-customer.webp"
+                alt="customer"
+              />
             </div>
           </div>
         </div>
@@ -374,53 +395,51 @@
             </div>
 
             <!-- 右側：リンクグループ -->
-            <div class="footer__nav">
-              <div class="footer__nav-group">
-                <h3 class="footer__nav-title">Company</h3>
-                <ul class="footer__nav-list">
-                  <li class="footer__nav-item"><a href="#">About Us</a></li>
-                  <li class="footer__nav-item"><a href="#">Blog</a></li>
-                  <li class="footer__nav-item"><a href="#">Gift cards</a></li>
-                  <li class="footer__nav-item"><a href="#">Careers</a></li>
-                </ul>
-              </div>
+            <div class="footer__nav-group">
+              <h3 class="footer__nav-title">Company</h3>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a href="#">About Us</a></li>
+                <li class="footer__nav-item"><a href="#">Blog</a></li>
+                <li class="footer__nav-item"><a href="#">Gift cards</a></li>
+                <li class="footer__nav-item"><a href="#">Careers</a></li>
+              </ul>
+            </div>
 
-              <div class="footer__nav-group">
-                <h3 class="footer__nav-title">Useful Links</h3>
-                <ul class="footer__nav-list">
-                  <li class="footer__nav-item"><a href="#">New products</a></li>
-                  <li class="footer__nav-item"><a href="#">Best sellers</a></li>
-                  <li class="footer__nav-item"><a href="#">Discount</a></li>
-                  <li class="footer__nav-item"><a href="#">F.A.Q</a></li>
-                </ul>
-              </div>
+            <div class="footer__nav-group">
+              <h3 class="footer__nav-title">Useful Links</h3>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a href="#">New products</a></li>
+                <li class="footer__nav-item"><a href="#">Best sellers</a></li>
+                <li class="footer__nav-item"><a href="#">Discount</a></li>
+                <li class="footer__nav-item"><a href="#">F.A.Q</a></li>
+              </ul>
+            </div>
 
-              <div class="footer__nav-group">
-                <h3 class="footer__nav-title">Customer Service</h3>
-                <ul class="footer__nav-list">
-                  <li class="footer__nav-item"><a href="#">Contact Us</a></li>
-                  <li class="footer__nav-item"><a href="#">Shipping</a></li>
-                  <li class="footer__nav-item"><a href="#">Returns</a></li>
-                  <li class="footer__nav-item">
-                    <a href="#">Order tracking</a>
-                  </li>
-                </ul>
-              </div>
+            <div class="footer__nav-group">
+              <h3 class="footer__nav-title">Customer Service</h3>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a href="#">Contact Us</a></li>
+                <li class="footer__nav-item"><a href="#">Shipping</a></li>
+                <li class="footer__nav-item"><a href="#">Returns</a></li>
+                <li class="footer__nav-item">
+                  <a href="#">Order tracking</a>
+                </li>
+              </ul>
+            </div>
 
-              <div class="footer__nav-group">
-                <h3 class="footer__nav-title">Store</h3>
-                <ul class="footer__nav-list">
-                  <li class="footer__nav-item">
-                    <address>8592 Fairground St. Tallahassee, FL 32303</address>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="tel:+7753786348">+775 378-6348</a>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="mailto:rgarton@outlook.com">rgarton@outlook.com</a>
-                  </li>
-                </ul>
-              </div>
+            <div class="footer__nav-group">
+              <h3 class="footer__nav-title">Store</h3>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <address>8592 Fairground St. Tallahassee, FL 32303</address>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="tel:+7753786348">+775 378-6348</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="mailto:rgarton@outlook.com">rgarton@outlook.com</a>
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -430,7 +449,10 @@
             </p>
             <div class="footer__payments">
               <!-- VISAなどのアイコン -->
-              <img src="images/common/footer-payment-method.svg" alt="" />
+              <img
+                src="images/common/footer-payment-method.svg"
+                alt="Accepted payment methods"
+              />
             </div>
           </div>
         </div>
