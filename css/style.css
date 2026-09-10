@@ -231,16 +231,10 @@
   gap: 60px;
 }
 
-.news__title {
-}
-
 .news__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-}
-
-.news-card {
 }
 
 .news-card__image {
@@ -553,11 +547,6 @@ input[type="range"]::-webkit-slider-thumb {
   gap: 45px;
 }
 
-.hero__button {
-  align-self: flex-start;
-  padding-inline: 40px;
-}
-
 /* =========================
    About Store
 ========================= */
@@ -865,4 +854,139 @@ input[type="range"]::-webkit-slider-thumb {
 .instagram__images {
   display: flex;
   gap: 24px;
+}
+
+/* =========================
+   Hero contact
+========================= */
+.hero--contact {
+  background-image: url("../images/hero/hero-contact.webp");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+.hero--contact .hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+/* =========================
+   Contact
+========================= */
+.contact {
+  padding-block: 60px;
+}
+
+.contact__wrapper {
+  display: flex;
+  gap: 110px;
+}
+
+.contact-form {
+  padding: 40px;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+}
+
+.contact-form__body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-form__row {
+  display: flex;
+  gap: 24px;
+}
+
+.contact-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-form__label {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.contact-form__input {
+  border: none;
+  padding: 9px 16px;
+  border-radius: 6px;
+}
+
+.contact-form__message {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-form__textarea {
+  min-height: 160px;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 6px;
+}
+
+.contact-form__button {
+  align-self: flex-start;
+  padding-inline: 60px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #f97316;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact__header {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact__title {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.contact__desc {
+  max-width: 636px;
+}
+
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact__value {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* =========================
+   Map
+========================= */
+.map {
+  padding-block: 60px;
+}
+
+.map__frame {
+  width: 100%;
+  min-height: 420px;
+  border-radius: 20px;
+  border: none;
 }

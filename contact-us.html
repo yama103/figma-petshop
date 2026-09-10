@@ -71,14 +71,16 @@
                 src="images/common/site-logo.svg"
                 alt=""
               />
-              <span>Pet Shop</span>
+              <span class="header__logo-name">Pet Shop</span>
             </a>
             <nav class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
                   <a href="#">Home</a>
                 </li>
-                <li class="header__nav-item"><a href="#">Shop</a></li>
+                <li class="header__nav-item">
+                  <a href="#">Shop</a>
+                </li>
                 <li class="header__nav-item"><a href="#">About Us</a></li>
                 <li class="header__nav-item header__nav-item--active">
                   <a href="#">Contact Us</a>
@@ -124,7 +126,7 @@
                 aliquam amet rhoncus quisque eget sit
               </p>
 
-              <a href="#" class="hero__button">Shop Now</a>
+              <a href="#" class="button hero__button">Shop Now</a>
             </div>
           </div>
         </div>
@@ -183,7 +185,9 @@
                     ></textarea>
                   </div>
 
-                  <button type="submit" class="button">Send Message</button>
+                  <button type="submit" class="button contact-form__button">
+                    Send Message
+                  </button>
                 </div>
               </div>
             </form>
@@ -299,53 +303,51 @@
             </div>
 
             <!-- 右側：リンクグループ -->
-            <div class="footer__nav">
-              <div class="footer__nav-group">
-                <h3 class="footer__nav-title">Company</h3>
-                <ul class="footer__nav-list">
-                  <li class="footer__nav-item"><a href="#">About Us</a></li>
-                  <li class="footer__nav-item"><a href="#">Blog</a></li>
-                  <li class="footer__nav-item"><a href="#">Gift cards</a></li>
-                  <li class="footer__nav-item"><a href="#">Careers</a></li>
-                </ul>
-              </div>
+            <div class="footer__nav-group">
+              <h3 class="footer__nav-title">Company</h3>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a href="#">About Us</a></li>
+                <li class="footer__nav-item"><a href="#">Blog</a></li>
+                <li class="footer__nav-item"><a href="#">Gift cards</a></li>
+                <li class="footer__nav-item"><a href="#">Careers</a></li>
+              </ul>
+            </div>
 
-              <div class="footer__nav-group">
-                <h3 class="footer__nav-title">Useful Links</h3>
-                <ul class="footer__nav-list">
-                  <li class="footer__nav-item"><a href="#">New products</a></li>
-                  <li class="footer__nav-item"><a href="#">Best sellers</a></li>
-                  <li class="footer__nav-item"><a href="#">Discount</a></li>
-                  <li class="footer__nav-item"><a href="#">F.A.Q</a></li>
-                </ul>
-              </div>
+            <div class="footer__nav-group">
+              <h3 class="footer__nav-title">Useful Links</h3>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a href="#">New products</a></li>
+                <li class="footer__nav-item"><a href="#">Best sellers</a></li>
+                <li class="footer__nav-item"><a href="#">Discount</a></li>
+                <li class="footer__nav-item"><a href="#">F.A.Q</a></li>
+              </ul>
+            </div>
 
-              <div class="footer__nav-group">
-                <h3 class="footer__nav-title">Customer Service</h3>
-                <ul class="footer__nav-list">
-                  <li class="footer__nav-item"><a href="#">Contact Us</a></li>
-                  <li class="footer__nav-item"><a href="#">Shipping</a></li>
-                  <li class="footer__nav-item"><a href="#">Returns</a></li>
-                  <li class="footer__nav-item">
-                    <a href="#">Order tracking</a>
-                  </li>
-                </ul>
-              </div>
+            <div class="footer__nav-group">
+              <h3 class="footer__nav-title">Customer Service</h3>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a href="#">Contact Us</a></li>
+                <li class="footer__nav-item"><a href="#">Shipping</a></li>
+                <li class="footer__nav-item"><a href="#">Returns</a></li>
+                <li class="footer__nav-item">
+                  <a href="#">Order tracking</a>
+                </li>
+              </ul>
+            </div>
 
-              <div class="footer__nav-group">
-                <h3 class="footer__nav-title">Store</h3>
-                <ul class="footer__nav-list">
-                  <li class="footer__nav-item">
-                    <address>8592 Fairground St. Tallahassee, FL 32303</address>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="tel:+7753786348">+775 378-6348</a>
-                  </li>
-                  <li class="footer__nav-item">
-                    <a href="mailto:rgarton@outlook.com">rgarton@outlook.com</a>
-                  </li>
-                </ul>
-              </div>
+            <div class="footer__nav-group">
+              <h3 class="footer__nav-title">Store</h3>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <address>8592 Fairground St. Tallahassee, FL 32303</address>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="tel:+7753786348">+775 378-6348</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="mailto:rgarton@outlook.com">rgarton@outlook.com</a>
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -355,7 +357,10 @@
             </p>
             <div class="footer__payments">
               <!-- VISAなどのアイコン -->
-              <img src="images/common/footer-payment-method.svg" alt="" />
+              <img
+                src="images/common/footer-payment-method.svg"
+                alt="Accepted payment methods"
+              />
             </div>
           </div>
         </div>
