@@ -246,7 +246,7 @@
    Shop-by-pet
 ========================= */
 .shop-by-pet {
-  padding-block: 60px;
+  padding-block: var(--spacing-sm);
 }
 
 .shop-by-pet__wrapper {

@@ -15,7 +15,7 @@
    Categories
 ========================= */
 .categories {
-  padding-block: 60px;
+  padding-block: var(--spacing-sm);
 }
 
 .categories__wrapper {
@@ -78,7 +78,7 @@
    Featured
 ========================= */
 .featured {
-  padding-block: 60px 120px;
+  padding-block: var(--spacing-sm) var(--spacing-lg);
 }
 
 .featured__wrapper {
@@ -122,7 +122,7 @@
 
 .promo__wrapper {
   display: flex;
-  padding-block: 120px;
+  padding-block: var(--spacing-lg);
 }
 
 .promo__content {
@@ -171,7 +171,7 @@
    Partners
 ========================= */
 .partners__wrapper {
-  padding-block: 60px;
+  padding-block: var(--spacing-sm);
 }
 
 .partners__list {
@@ -197,7 +197,7 @@
    Bestsellers
 ========================= */
 .bestsellers {
-  padding-block: 60px;
+  padding-block: var(--spacing-sm);
 }
 
 .bestsellers__wrapper {
@@ -222,7 +222,7 @@
    News
 ========================= */
 .news {
-  padding-block: 60px;
+  padding-block: var(--spacing-sm);
 }
 
 .news__wrapper {
@@ -296,7 +296,7 @@
    Shop
 ========================= */
 .shop {
-  padding-block: 60px;
+  padding-block: var(--spacing-sm);
 }
 
 .shop__wrapper {
@@ -518,7 +518,7 @@
    Shop
 ========================= */
 .shop-banners {
-  padding-block: 60px;
+  padding-block: var(--spacing-sm);
 }
 
 .shop-banners__list {
@@ -546,7 +546,7 @@
    About Store
 ========================= */
 .about-store {
-  padding-block: 60px;
+  padding-block: var(--spacing-sm);
 }
 
 .about-store__wrapper {
@@ -603,7 +603,7 @@
    Founder
 ========================= */
 .founder {
-  padding-block: 60px;
+  padding-block: var(--spacing-sm);
 }
 
 .founder__wrapper {
@@ -614,7 +614,7 @@
 .founder__content {
   display: flex;
   flex-direction: column;
-  padding-block: 80px;
+  padding-block: var(--spacing-md);
 }
 
 .founder__body {
@@ -655,7 +655,7 @@
    Team
 ========================= */
 .team {
-  padding-block: 60px 120px;
+  padding-block: var(--spacing-sm) var(--spacing-lg);
 }
 
 .team__wrapper {
@@ -813,7 +813,7 @@
    Video
 ========================= */
 .video {
-  padding-block: 120px 60px;
+  padding-block: var(--spacing-lg) var(--spacing-sm);
 }
 
 .video__image {
@@ -831,7 +831,7 @@
    Instagram
 ========================= */
 .instagram {
-  padding-block: 60px;
+  padding-block: var(--spacing-sm);
 }
 
 .instagram__wrapper {
@@ -871,7 +871,7 @@
    Contact
 ========================= */
 .contact {
-  padding-block: 60px;
+  padding-block: var(--spacing-sm);
 }
 
 .contact__wrapper {
@@ -976,7 +976,7 @@
    Map
 ========================= */
 .map {
-  padding-block: 60px;
+  padding-block: var(--spacing-sm);
 }
 
 .map__frame {
@@ -990,6 +990,16 @@
    Responsive
 ========================= */
 @media (max-width: 768px) {
+  .topbar__wrapper {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .topbar__contact-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+
   .header__wrapper {
     flex-wrap: wrap;
     padding: 20px 20px;
@@ -1036,5 +1046,103 @@
     transform: translateY(-50%) rotate(-45deg);
     position: absolute;
     top: 50%;
+  }
+
+  .categories {
+    padding-block: var(--spacing-md);
+  }
+
+  .categories__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .category-card__image img {
+    width: 100%;
+  }
+
+  .featured {
+    padding-block: 0px var(--spacing-md);
+  }
+
+  .featured__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .product-card__image img {
+    width: 100%;
+  }
+  .bestsellers {
+    padding-block: 0;
+  }
+
+  .bestsellers__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .shop-by-pet__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .news__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer {
+  }
+
+  .container {
+  }
+
+  .footer__wrapper {
+  }
+
+  .footer__top {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer__brand {
+  }
+
+  .footer__logo {
+  }
+
+  .footer__desc {
+  }
+
+  .footer__social-list {
+  }
+
+  .footer__social-item {
+  }
+
+  .footer__nav-group {
+  }
+
+  .footer__nav-title {
+  }
+
+  .footer__nav-list {
+  }
+
+  .footer__nav-item {
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer__copyright {
+  }
+
+  .footer__payments {
+    order: -1;
   }
 }
